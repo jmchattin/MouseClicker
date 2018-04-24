@@ -1,0 +1,14 @@
+﻿<Window x:Class="MouseClicker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Mouse Clicker" Height="350" Width="525">
+    <Grid>
+        <Button Content="Start Clicking" HorizontalAlignment="Center" VerticalAlignment="Center" Width="306" Height="189" Click="Button_Click" x:Name="MyButton"/>
+        <Label Content="{Binding clickStatus}" HorizontalAlignment="Center" VerticalAlignment="Bottom" x:Name="StatusLabel"/>
+        <Button Content="Debugger" HorizontalAlignment="Left" Margin="416,65,0,0" VerticalAlignment="Top" Width="91" Click="Button_Click_1"/>
+        <TextBox TextWrapping="Wrap" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top" Height="189" Width="90"
+                 Text="Click the big button. You have 3 seconds to get your mouse into positon. To stop, click the big button again."
+                 TextAlignment="Center"/>
+
+    </Grid>
+</Window>
